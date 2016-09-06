@@ -18,7 +18,7 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 #### 1. Sign in to your account on [StreamTVNow](http://streamtvnow.tv).
 
-#### 2. Go to the []"old" player page](http://streamtvnow.tv/players/web_auth_old/index.php).
+#### 2. Go to the ["old" player page](http://streamtvnow.tv/players/web_auth_old/index.php).
 
 #### 3. Click on the VLC traffic cone icon, below the video player frame.
 
@@ -35,3 +35,7 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 #### 6. Paste the URL from your clipboard into the terminal window.
 
 ![Paste the URL](paste-URL.png)
+
+#### 7. Playlist is built and placed in the same folder as the script.
+
+![](succes.png)

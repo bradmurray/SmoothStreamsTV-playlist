@@ -75,7 +75,7 @@ def buildPlaylistFile(body):
 
         # check for existence/closure of file
         if f.closed:
-            print ("Playlist built successfully, located at:")
+            print ("\n\nPlaylist built successfully, located at: ")
             call(['pwd'])
         else:
             raise FileNotFoundError
