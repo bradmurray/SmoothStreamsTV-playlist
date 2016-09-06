@@ -38,4 +38,20 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 #### 7. Playlist is built and placed in the same folder as the script.
 
-![](success.png)
+![Success](success.png)
+
+#### 8. Navigate to that folder and open the m3u8 file in VLC by drag-and-drop or right click.
+
+![Open playlist](open-playlist.png)
+
+#### 9. Navigate to that folder and open the m3u8 file in VLC by drag-and-drop or right click.
+
+![](open-playlist.png)
+
+You'll now see the list of channels available in VLC's playlist.
+
+![](channel-list.png)
+
+Double-click one to begin playing in VLC.
+
+![](vlc.png)
