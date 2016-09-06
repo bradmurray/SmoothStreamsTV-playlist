@@ -28,7 +28,12 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 ![Copy URL](copy-URL.png)
 
-#### 5. Open a terminal or command line and run the python script.
+#### 5. Open a terminal (AKA command line) and run the python script.
+
+```python
+cd /path/to/the/script
+python ./sstv-playlist-generator.py
+```
 
 ![Run the script](run-script.png)
 
@@ -44,14 +49,14 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 ![Open playlist](open-playlist.png)
 
-#### 9. Navigate to that folder and open the m3u8 file in VLC by drag-and-drop or right click.
-
-![](open-playlist.png)
-
 You'll now see the list of channels available in VLC's playlist.
 
-![](channel-list.png)
+![List of channels](channel-list.png)
 
 Double-click one to begin playing in VLC.
 
-![](vlc.png)
+![Playing in VLC](vlc.png)
+
+
+
+#### Please feel free to open an issue or contribute some improvements!
