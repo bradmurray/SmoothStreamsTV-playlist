@@ -38,4 +38,4 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 #### 7. Playlist is built and placed in the same folder as the script.
 
-![](succes.png)
+![](success.png)
