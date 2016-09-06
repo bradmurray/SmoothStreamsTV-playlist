@@ -3,6 +3,8 @@ Generate a M3U8 playlist from an authenticated [SmoothStreamsTV URL](http://stre
 
 This program will output an M3U8 playlist file when fed an authenticated URL.  
 
+## Note: Authentication tokens expire every 24 hours, so this will have to be run once per day to generate a valid playlist.  For those with some scripting/programming ability, this should be trivial.
+
 It simply extracts the auth token from the authenticated URL and inserts it into an m3u8 template with the channel names/URLs from StreamTVNow.
 
 ## Why did I build this?
