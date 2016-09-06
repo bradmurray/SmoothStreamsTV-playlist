@@ -135,31 +135,7 @@ http://dnaw1.smoothstreams.tv:9100/viewstvn/ch19.smil/playlist.m3u8?wmsAuthSign=
 #EXTINF:-1, 20 Sportsnet One (Bell)
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch20.smil/playlist.m3u8?wmsAuthSign={AuthSign}
 #EXTINF:-1, 21 TSN 1 (Bell)
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch21.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 22
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch22.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 23
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch23.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 24
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch24.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 25
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch25.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 26
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch26.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 27
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch27.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 28
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch28.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 29
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch29.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 30
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch30.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 31
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch31.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 32
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch32.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 33
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch33.smil/playlist.m3u8?wmsAuthSign={AuthSign}
+# Empty channels
 #EXTINF:-1, 34 NBC East (Buffalo)
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch34.smil/playlist.m3u8?wmsAuthSign={AuthSign}
 #EXTINF:-1, 35 CBS East (Buffalo)
@@ -204,118 +180,12 @@ http://dnaw1.smoothstreams.tv:9100/viewstvn/ch53.smil/playlist.m3u8?wmsAuthSign=
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch54.smil/playlist.m3u8?wmsAuthSign={AuthSign}
 #EXTINF:-1, 55 Starz East
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch55.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 56
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch56.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 57
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch57.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 58
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch58.smil/playlist.m3u8?wmsAuthSign={AuthSign}
+# Empty channels
 #EXTINF:-1, 59 Cinemax East (DirecTV)
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch59.smil/playlist.m3u8?wmsAuthSign={AuthSign}
 #EXTINF:-1, 60 Cinemax 5 Star (DirecTV)
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch60.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 61
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch61.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 62
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch62.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 63
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch63.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 64
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch64.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 65
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch65.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 66
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch66.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 67
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch67.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 68
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch68.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 69
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch69.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 70
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch70.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 71
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch71.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 72
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch72.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 73
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch73.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 74
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch74.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 75
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch75.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 76
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch76.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 77
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch77.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 78
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch78.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 79
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch79.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 80
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch80.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 81
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch81.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 82
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch82.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 83
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch83.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 84
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch84.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 85
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch85.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 86
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch86.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 87
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch87.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 88
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch88.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 89
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch89.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 90
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch90.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 91
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch91.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 92
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch92.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 93
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch93.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 94
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch94.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 95
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch95.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 96
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch96.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 97
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch97.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 98
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch98.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 99
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch99.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 100
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch100.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 101
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch101.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 102
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch102.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 103
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch103.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 104
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch104.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 105
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch105.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 106
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch106.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 107
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch107.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 108
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch108.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 109
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch109.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 110
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch110.smil/playlist.m3u8?wmsAuthSign={AuthSign}
-#EXTINF:-1, 111
-#http://dnaw1.smoothstreams.tv:9100/viewstvn/ch111.smil/playlist.m3u8?wmsAuthSign={AuthSign}
+# Empty channels
 #EXTINF:-1, 112 Sky Sports News HQ
 http://dnaw1.smoothstreams.tv:9100/viewstvn/ch112.smil/playlist.m3u8?wmsAuthSign={AuthSign}
 #EXTINF:-1, 113 Sky Sports 1 UK
