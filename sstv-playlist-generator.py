@@ -13,17 +13,25 @@ __license__ = 'MIT'
 
 
 def main():
-    print(instructions)
+    '''higher level program controller'''
+    try:
+        print(instructions)
 
-    # prompt user to input their authenticated URL
-    URL = raw_input('\n')
-    token = str(extractToken(URL))
+        # prompt user to input their authenticated URL
+        URL = raw_input('\n')
+        token = str(extractToken(URL))
 
-    # inject current token into m3u8 skeleton
-    m3u8Body = insertToken(m3u8Skeleton, authSignPlaceholder, token)
+        # inject current token into m3u8 skeleton
+        m3u8Body = insertToken(m3u8Skeleton, authSignPlaceholder, token)
 
-    # build and output the playlist file
-    buildPlaylistFile(m3u8Body)
+        # build and output the playlist file
+        buildPlaylistFile(m3u8Body)
+
+        # confirm success
+    except Exception as ex:
+        template = "An exception of type {0} occured. Arguments:\n{1!r}"
+        message = template.format(type(ex).__name__, ex.args)
+        print (message)
 #end main
 
 
@@ -37,6 +45,9 @@ def extractToken(URL):
         # AuthSign not found in the URL
         found = ''
         print ('Unable to extract token.')
+        template = "An exception of type {0} occured. Arguments:\n{1!r}"
+        message = template.format(type(ex).__name__, ex.args)
+        print (message)
 #end extractToken
 
 
@@ -48,18 +59,31 @@ def insertToken(targetString, pattern, insertion):
 
 def buildPlaylistFile(body):
     '''write playlist textbody to a new local m3u8 file'''
+    try:
+        # title will be the current date in yyyy/mm/dd format
+        date = str(time.strftime('%Y-%m-%d'))
+        title = 'SmoothStreamsTV_' + date + '.m3u8'
 
-    # title will be the current date in yyyy/mm/dd format
-    date = str(time.strftime('%Y-%m-%d'))
-    title = 'SmoothStreamsTV_' + date + '.m3u8'
+        # create file with subprocess.call (to call shell functions)
+        call(['touch', title])
 
-    # create file with subprocess.call (to call shell functions)
-    call(['touch', title])
+        # open file or create file if DNE, write <body> to file and save
+        with open(title, 'w+') as f:
+            f.write(body)
+            f.flush()
+            f.close()
 
-    # open file or create file if DNE, write <body> to file and save
-    with open(title, 'w+') as f:
-        f.write(body)
-        f.close()
+        # check for existence/closure of file
+        if f.closed:
+            print ("Playlist built successfully, located at:")
+            call(['pwd'])
+        else:
+            raise FileNotFoundError
+
+    except:
+        template = "An exception of type {0} occured. Arguments:\n{1!r}"
+        message = template.format(type(ex).__name__, ex.args)
+        print (message)
 #end buildPlaylistFile
 
 
