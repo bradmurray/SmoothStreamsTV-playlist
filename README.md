@@ -57,6 +57,6 @@ Double-click one to begin playing in VLC.
 
 ![Playing in VLC](vlc.png)
 
+## That's all!
 
-
-#### Please feel free to open an issue or contribute some improvements!
+#### Please feel free to [open an issue](https://github.com/stvhwrd/SmoothStreamsTV-playlist/issues) or contribute some improvements!
