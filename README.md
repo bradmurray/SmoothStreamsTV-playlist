@@ -9,11 +9,9 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 ## Why did I build this?
 
-#### The StreamTVNow interface leaves a lot to be desired...
 
-![This is lame](old-interface.png)
-
-#### VLC is my favourite media player.
+![VLC rules](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/VLC_Icon.svg/200px-VLC_Icon.svg.png)
+#### Because [VLC](https://www.videolan.org/) is my favourite media player.
 ...and it plays nicely with M3U8 playlists, including playlists of HLS streams.
 
 ## How do I use this?
@@ -24,11 +22,11 @@ It simply extracts the auth token from the authenticated URL and inserts it into
 
 #### 3. Click on the VLC traffic cone icon, below the video player frame.
 
-![VLC cone icon](click-on-vlc.png)
+![VLC cone icon](images/click-on-vlc.png)
 
 #### 4. Highlight and copy the link that appears beside the **HLS** box.
 
-![Copy URL](copy-URL.png)
+![Copy URL](images/copy-URL.png)
 
 #### 5. Open a terminal (AKA command line) and run the python script.
 
@@ -37,27 +35,27 @@ cd /path/to/the/script
 python ./sstv-playlist-generator.py
 ```
 
-![Run the script](run-script.png)
+![Run the script](images/run-script.png)
 
 #### 6. Paste the URL from your clipboard into the terminal window.
 
-![Paste the URL](paste-URL.png)
+![Paste the URL](images/paste-URL.png)
 
 #### 7. Playlist is built and placed in the same folder as the script.
 
-![Success](success.png)
+![Success](images/success.png)
 
 #### 8. Navigate to that folder and open the m3u8 file in VLC by drag-and-drop or right click.
 
-![Open playlist](open-playlist.png)
+![Open playlist](images/open-playlist.png)
 
 You'll now see the list of channels available in VLC's playlist.
 
-![List of channels](channel-list.png)
+![List of channels](images/channel-list.png)
 
 Double-click one to begin playing in VLC.
 
-![Playing in VLC](vlc.png)
+![Playing in VLC](images/vlc.png)
 
 ## That's all!
 
