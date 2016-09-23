@@ -31,20 +31,25 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>This program will output an M3U8 playlist file when fed an authenticated <a href="http://streamtvnow.tv/players/web_auth_old/index.php">SmoothStreamsTV URL</a>.  </p>
+        <h1>
+<a id="sstv-playlist" class="anchor" href="#sstv-playlist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SSTV-playlist</h1>
+
+<p>Generate a M3U8 playlist from an authenticated <a href="http://streamtvnow.tv/players/web_auth_old/index.php">SmoothStreamsTV URL</a>.  No affiliation with SmoothStreamsTV or StreamTVNow.</p>
+
+<p>This program will output an M3U8 playlist file when fed an authenticated URL.  </p>
+
+<h2>
+<a id="note-authentication-tokens-expire-every-24-hours-so-this-will-have-to-be-run-once-per-day-to-generate-a-valid-playlist--for-those-with-some-scriptingprogramming-ability-this-should-be-trivial" class="anchor" href="#note-authentication-tokens-expire-every-24-hours-so-this-will-have-to-be-run-once-per-day-to-generate-a-valid-playlist--for-those-with-some-scriptingprogramming-ability-this-should-be-trivial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note: Authentication tokens expire every 24 hours, so this will have to be run once per day to generate a valid playlist.  For those with some scripting/programming ability, this should be trivial.</h2>
 
 <p>It simply extracts the auth token from the authenticated URL and inserts it into an m3u8 template with the channel names/URLs from StreamTVNow.</p>
 
 <h2>
 <a id="why-did-i-build-this" class="anchor" href="#why-did-i-build-this" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why did I build this?</h2>
 
-<h4>
-<a id="the-streamtvnow-interface-leaves-a-lot-to-be-desired" class="anchor" href="#the-streamtvnow-interface-leaves-a-lot-to-be-desired" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The StreamTVNow interface leaves a lot to be desired...</h4>
-
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/old-interface.png" alt="This is lame"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/VLC_Icon.svg/200px-VLC_Icon.svg.png" alt="VLC rules"></p>
 
 <h4>
-<a id="vlc-is-my-favourite-media-player" class="anchor" href="#vlc-is-my-favourite-media-player" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VLC is my favourite media player.</h4>
+<a id="because-vlc-is-my-favourite-media-player" class="anchor" href="#because-vlc-is-my-favourite-media-player" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Because <a href="https://www.videolan.org/">VLC</a> is my favourite media player.</h4>
 
 <p>...and it plays nicely with M3U8 playlists, including playlists of HLS streams.</p>
 
@@ -60,12 +65,12 @@
 <h4>
 <a id="3-click-on-the-vlc-traffic-cone-icon-below-the-video-player-frame" class="anchor" href="#3-click-on-the-vlc-traffic-cone-icon-below-the-video-player-frame" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Click on the VLC traffic cone icon, below the video player frame.</h4>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/click-on-vlc.png" alt="VLC cone icon"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/click-on-vlc.png" alt="VLC cone icon"></p>
 
 <h4>
 <a id="4-highlight-and-copy-the-link-that-appears-beside-the-hls-box" class="anchor" href="#4-highlight-and-copy-the-link-that-appears-beside-the-hls-box" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Highlight and copy the link that appears beside the <strong>HLS</strong> box.</h4>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/copy-URL.png" alt="Copy URL"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/copy-URL.png" alt="Copy URL"></p>
 
 <h4>
 <a id="5-open-a-terminal-aka-command-line-and-run-the-python-script" class="anchor" href="#5-open-a-terminal-aka-command-line-and-run-the-python-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Open a terminal (AKA command line) and run the python script.</h4>
@@ -73,30 +78,30 @@
 <div class="highlight highlight-source-python"><pre>cd <span class="pl-k">/</span>path<span class="pl-k">/</span>to<span class="pl-k">/</span>the<span class="pl-k">/</span>script
 python .<span class="pl-k">/</span>sstv<span class="pl-k">-</span>playlist<span class="pl-k">-</span>generator.py</pre></div>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/run-script.png" alt="Run the script"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/run-script.png" alt="Run the script"></p>
 
 <h4>
 <a id="6-paste-the-url-from-your-clipboard-into-the-terminal-window" class="anchor" href="#6-paste-the-url-from-your-clipboard-into-the-terminal-window" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. Paste the URL from your clipboard into the terminal window.</h4>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/paste-URL.png" alt="Paste the URL"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/paste-URL.png" alt="Paste the URL"></p>
 
 <h4>
 <a id="7-playlist-is-built-and-placed-in-the-same-folder-as-the-script" class="anchor" href="#7-playlist-is-built-and-placed-in-the-same-folder-as-the-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7. Playlist is built and placed in the same folder as the script.</h4>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/success.png" alt="Success"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/success.png" alt="Success"></p>
 
 <h4>
 <a id="8-navigate-to-that-folder-and-open-the-m3u8-file-in-vlc-by-drag-and-drop-or-right-click" class="anchor" href="#8-navigate-to-that-folder-and-open-the-m3u8-file-in-vlc-by-drag-and-drop-or-right-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. Navigate to that folder and open the m3u8 file in VLC by drag-and-drop or right click.</h4>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/open-playlist.png" alt="Open playlist"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/open-playlist.png" alt="Open playlist"></p>
 
 <p>You'll now see the list of channels available in VLC's playlist.</p>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/channel-list.png" alt="List of channels"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/channel-list.png" alt="List of channels"></p>
 
 <p>Double-click one to begin playing in VLC.</p>
 
-<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/vlc.png" alt="Playing in VLC"></p>
+<p><img src="https://raw.githubusercontent.com/stvhwrd/SmoothStreamsTV-playlist/master/images/vlc.png" alt="Playing in VLC"></p>
 
 <h2>
 <a id="thats-all" class="anchor" href="#thats-all" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>That's all!</h2>
