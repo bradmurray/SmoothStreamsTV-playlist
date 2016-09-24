@@ -88,5 +88,8 @@ ENV/
 # Rope project settings
 .ropeproject
 
+# Mac OS
+.DS_Store
+
 # Generated m3u8 playlist files
-.m3u8
+*.m3u8
