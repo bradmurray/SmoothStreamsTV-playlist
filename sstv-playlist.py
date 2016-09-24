@@ -10,7 +10,7 @@ from getpass import getpass
 
 __appname__ = 'SSTV-playlist'
 __author__ = 'Stevie Howard (stvhwrd)'
-__version__ = '0.1'
+__version__ = '0.1beta'
 __license__ = 'MIT'
 
 
@@ -33,8 +33,8 @@ def main():
     # ENTER YOUR CREDENTIALS BELOW
     # example - username = 'sampleuser@email.com'
     # example - password = 'psswrd1234!'
-    username = ''
-    password = ''
+    username = 'zahoward@gmail.com'
+    password = 'maCC@bb33romaworks'
 
     # CHOOSE YOUR SERVER HERE (see list below)
     # example for US West:  server = 'dnaw'
@@ -64,13 +64,15 @@ def main():
 
     authSign = getAuthSign(username, password)
 
-    if len(server) < 1:
+    if not server:
         server = getServer(servers)
 
-    colourPrint('green', '\nThank you, generating playlist.\n')
+    colourPrint('green',
+                '\nThank you, generating playlist.\n')
 
     playlistText = generatePlaylist(server, authSign)
     playlistFile = buildPlaylistFile(playlistText)
+
 # end main()
 
 
