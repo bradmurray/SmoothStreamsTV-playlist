@@ -33,8 +33,8 @@ def main():
     # ENTER YOUR CREDENTIALS BELOW
     # example - username = 'sampleuser@email.com'
     # example - password = 'psswrd1234!'
-    username = 'zahoward@gmail.com'
-    password = 'maCC@bb33romaworks'
+    username = ''
+    password = ''
 
     # CHOOSE YOUR SERVER HERE (see list below)
     # example for US West:  server = 'dnaw'
@@ -122,9 +122,8 @@ def getServer(servers):
     server = raw_input('')
     for key, value in servers.items():
         if server in value and len(value) == len(server):  #cheap and dirty alternative to regex
-            colourPrint('bold',
-                        colourPrint('green',
-                                    '\nYou have chosen the ' + key + ' server.\n'))
+            colourPrint('green',
+                        '\nYou have chosen the ' + key + ' server.\n'))
             break
 
     return server
