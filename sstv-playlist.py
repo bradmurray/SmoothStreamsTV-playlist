@@ -123,7 +123,7 @@ def getServer(servers):
     for key, value in servers.items():
         if server in value and len(value) == len(server):  #cheap and dirty alternative to regex
             colourPrint('green',
-                        '\nYou have chosen the ' + key + ' server.\n'))
+                        '\nYou have chosen the ' + key + ' server.\n')
             break
 
     return server
