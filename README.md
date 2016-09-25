@@ -14,19 +14,15 @@ I've made an effort to use only built-in Python modules, but please let me know 
 ## Instructions
 
 1. [Download](https://github.com/stvhwrd/SmoothStreamsTV-playlist/archive/master.zip) this repository.
-
 `wget -O SmoothStreamsTV-playlist https://github.com/stvhwrd/SmoothStreamsTV-playlist/archive/master.zip`
 
-2. Unzip the zip folder.
-
+2. Unzip the zip file.
 `unzip SmoothStreamsTV-playlist`
 
 3. Navigate to the folder.
-
 `cd SmoothStreamsTV-playlist`
 
 4. Run the script **with Python 2**.
-
 `python ./sstv-playlist.py`
 
 The m3u8 playlist file will be created in the same directory as the script itself.
