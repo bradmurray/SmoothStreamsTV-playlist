@@ -5,7 +5,7 @@
 from getpass import getpass
 from json import loads, dumps
 from os import path
-from urllib import urlopen
+from urllib import urlopen, urlencode
 import time
 
 __appname__ = 'SSTV-playlist'
@@ -20,19 +20,14 @@ WELCOME to the SmoothStreamsTV playlist generator!
 This program will generate an .m3u8 playlist file with all available channels
 for the SmoothStreamsTV IPTV provider, playable in media players and browsers.
 Please note: channel names/numbers are sourced from SmoothStreamsTV,
-and current as of September 23, 2016.
-
-You may wish to store your credentials and server preferences in this file
-by opening it in a text editor and filling in the username, password, and
-server fields.  If you choose not to do this, you will be prompted for
-this information on each run of this script.
+and current as of September 25, 2016.
 '''
 
 
 def main():
     # ENTER YOUR CREDENTIALS BELOW
-    # example - username = 'sampleuser@email.com'
-    # example - password = 'psswrd1234!'
+    # example: username = 'sampleuser@email.com'
+    # example: password = 'psswrd1234!'
     username = ''
     password = ''
 
@@ -68,7 +63,7 @@ def main():
         server = getServer(servers)
 
     colourPrint('yellow',
-                'Please wait, generating playlist.')
+                '\nPlease wait, generating playlist.')
 
     playlistText = generatePlaylist(server, authSign)
     playlistFile = buildPlaylistFile(playlistText)
@@ -78,40 +73,65 @@ def main():
 
 def getAuthSign(un, pw):
     '''request JSON from server and return hash'''
-    url = ('http://smoothstreams.tv/schedule/admin/dash_new/hash_api.php?' +
-           'username=' + un + '&password=' + pw + '&site=viewstvn')
+
+    baseUrl = 'http://smoothstreams.tv/schedule/admin/dash_new/hash_api.php?'
+
+    params = {
+        "username": un,
+        "password": pw,
+        "site": "viewstvn"
+    }
+
+    url = baseUrl + urlencode(params)
 
     try:
         response = urlopen(url)
         data = loads(response.read())
         if data['hash']:
             colourPrint('green',
-                        'Thank you, authentication complete.')
+                        'Thank you, authentication complete.\n')
             return data['hash']
+
+    except ValueError:
+        colourPrint('red',
+                    'Unable to retrieve data from the server.\n' +
+                    'Please check your internet connection and try again.')
+        exit(1)
     except KeyError:
         colourPrint('red',
                     'There was an error with your credentials.\n' +
-                    'Please double-check your username and password, and try again.')
+                    'Please double-check your username and password,' +
+                    ' and try again.')
         exit(1)
 # end getAuthSign()
 
 
 def getCredentials():
     '''prompt user for username and password'''
+
+    colourPrint('bold',
+                ('You may wish to store your credentials and server preferences in this file' +
+                 'by opening it in a text editor and filling in the username, password, and' +
+                 'server fields.  If you choose not to do this, you will be prompted for' +
+                 'this information on each run of this script.'))
+
     colourPrint('yellow',
                 '\nPlease enter your username for SmoothStreamsTV:')
     username = raw_input('')
     colourPrint('green',
-                '\nThank you, ' + username + '.')
+                '\nThank you, ' + username + '.\n')
+
     colourPrint('yellow',
                 '\nPlease enter your password for SmoothStreamsTV:')
     password = getpass('')
+
     return username, password
 # end getCredentials()
 
 
 def getServer(servers):
     '''prompt user to choose closest server'''
+
     colourPrint('yellow',
                 '\nServer options:')
     colourPrint('yellow',
@@ -121,7 +141,8 @@ def getServer(servers):
                 '\nPlease choose your server:')
     server = raw_input('')
     for key, value in servers.items():
-        if server in value and len(value) == len(server):  #cheap and dirty alternative to regex
+        # cheap and dirty alternative to regex
+        if server in value and len(value) == len(server):
             colourPrint('green',
                         '\nYou have chosen the ' + key + ' server.\n')
             break
@@ -133,9 +154,7 @@ def getServer(servers):
 def buildPlaylistFile(body):
     '''write playlist to a new local m3u8 file'''
 
-    # title will include the current date in yyyy/mm/dd format
-    date = str(time.strftime('%Y-%m-%d'))
-    title = 'SmoothStreamsTV_' + date + '.m3u8'
+    title = 'SmoothStreamsTV.m3u8'
 
     # open file to write, or create file if DNE, write <body> to file and save
     with open(title, 'w+') as f:
@@ -157,12 +176,15 @@ def buildPlaylistFile(body):
 
 def generatePlaylist(server, authSign):
     '''build string of channels in m3u8 format based on global channelDictionary'''
+
     m3u8 = '#EXTM3U\n'
     # iterate through channels in channel-number order
     for channel in sorted(channelDictionary, key=lambda channel: int(channel)):
-        m3u8 += ('#EXTINF:-1, ' + channel + ' ' + channelDictionary[channel] + '\n' +
-                'http://' + server + '.smoothstreams.tv:9100/viewstvn/ch' + channel +
-                'q1.stream/playlist.m3u8?wmsAuthSign=' + authSign + '\n')
+        m3u8 += ('#EXTINF:-1, ' + channel +
+                 ' ' + channelDictionary[channel] +
+                 '\n' + 'http://' + server +
+                 '.smoothstreams.tv:9100/viewstvn/ch' + channel +
+                 'q1.stream/playlist.m3u8?wmsAuthSign=' + authSign + '\n')
 
     return m3u8
 # generatePlaylist()
