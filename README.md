@@ -1,5 +1,5 @@
 # SmoothStreamsTV-playlist
-Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.
+Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) for [SmoothStreamsTV](http://smoothstreams.tv/) from your command line.
 
 
 ## Requirements
@@ -32,6 +32,7 @@ If you wish, you can move the `sstv-playlist.py` file alone to any directory, an
 * macOS 10.12
 * Ubuntu 14.04.5 LTS
 * Ubuntu 16.04.1 LTS
+* Windows 10
 
 
 ## Feedback
