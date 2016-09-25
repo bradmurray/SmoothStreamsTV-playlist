@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="SmoothStreamsTV-playlist : No affiliation with SmoothStreamsTV or StreamTVNow.">
+    <meta name="description" content="SmoothStreamsTV playlist : Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>SmoothStreamsTV-playlist</title>
+    <title>SmoothStreamsTV playlist</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/stvhwrd/SmoothStreamsTV-playlist">View on GitHub</a>
 
-          <h1 id="project_title">SmoothStreamsTV-playlist</h1>
-          <h2 id="project_tagline">No affiliation with SmoothStreamsTV or StreamTVNow.</h2>
+          <h1 id="project_title">SmoothStreamsTV playlist</h1>
+          <h2 id="project_tagline">Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/stvhwrd/SmoothStreamsTV-playlist/zipball/master">Download this project as a .zip file</a>
@@ -31,16 +31,13 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.</p>
-
-<h6>
-<a id="tested-on-mac-os-x-1011-macos-1012-ubuntu-14045-lts-ubuntu-16041-lts" class="anchor" href="#tested-on-mac-os-x-1011-macos-1012-ubuntu-14045-lts-ubuntu-16041-lts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tested on: Mac OS X 10.11; macOS 10.12; Ubuntu 14.04.5 LTS; Ubuntu 16.04.1 LTS</h6>
+        <p>(No affiliation with SmoothStreamsTV or StreamTVNow.)</p>
 
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
-<li><a href="https://www.python.org/download/releases/2.7/">Python 2.7</a></li>
+<li><a href="https://www.python.org/download/releases/2.7/">Python 2.7.10<sup>+<sup></sup></sup></a></li>
 </ul>
 
 <p>I've made an effort to use only built-in Python modules, but please let me know if your system requires any extra items installed to make this work.</p>
@@ -52,13 +49,26 @@
 <li><p><a href="https://github.com/stvhwrd/SmoothStreamsTV-playlist/archive/master.zip">Download</a> this repository.</p></li>
 <li><p>Unzip the zip file.</p></li>
 <li><p>Open the folder.</p></li>
-<li><p>Run the script with <strong>Python 2</strong> (...it might work with Python 3, but has not been tested).</p></li>
+<li><p>Run the script with <strong>Python 2</strong>:</p></li>
 </ol>
 
 <p><code>python ./sstv-playlist.py</code></p>
 
 <p>The m3u8 playlist file will be created in the same directory as the script itself.
 If you wish, you can move the <code>sstv-playlist.py</code> file alone to any directory, and the m3u8 playlist file will be created there instead.</p>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
+
+<h4>
+<a id="tested-on" class="anchor" href="#tested-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tested on:</h4>
+
+<ul>
+<li>Mac OS X 10.11</li>
+<li>macOS 10.12</li>
+<li>Ubuntu 14.04.5 LTS</li>
+<li>Ubuntu 16.04.1 LTS</li>
+</ul>
 
 <h2>
 <a id="feedback" class="anchor" href="#feedback" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feedback</h2>
@@ -75,7 +85,7 @@ GitHub Issues will stick with the project, and are the best way to ensure that t
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">SmoothStreamsTV-playlist maintained by <a href="https://github.com/stvhwrd">stvhwrd</a></p>
+        <p class="copyright">SmoothStreamsTV playlist maintained by <a href="https://github.com/stvhwrd">stvhwrd</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
