@@ -6,7 +6,7 @@ Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.
 
 ## Requirements
 
-* [Python 2.7](https://www.python.org/download/releases/2.7/)
+* [Python 2.7.10<sup>+<sup>](https://www.python.org/download/releases/2.7/)
 
 I've made an effort to use only built-in Python modules, but please let me know if your system requires any extra items installed to make this work.
 
