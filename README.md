@@ -19,7 +19,7 @@ I've made an effort to use only built-in Python modules, but please let me know 
 
 3. Open the folder.
 
-4. Run the script with **Python 2** (...it might work with Python 3, but has not been tested).
+4. Run the script with **Python 2**:
 
 `python ./sstv-playlist.py`
 
