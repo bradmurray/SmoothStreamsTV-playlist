@@ -20,7 +20,7 @@ I've made an effort to use only built-in Python modules, but please let me know 
 `unzip SmoothStreamsTV-playlist`
 
 3. Navigate to the folder.
-`cd SmoothStreamsTV-playlist`
+`cd SmoothStreamsTV-playlist-master`
 
 4. Run the script **with Python 2**.
 `python ./sstv-playlist.py`
