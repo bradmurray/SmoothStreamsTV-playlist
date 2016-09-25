@@ -162,7 +162,7 @@ def generatePlaylist(server, authSign):
     for channel in sorted(channelDictionary, key=lambda channel: int(channel)):
         m3u8 += ('#EXTINF:-1, ' + channel + ' ' + channelDictionary[channel] + '\n' +
                 'http://' + server + '.smoothstreams.tv:9100/viewstvn/ch' + channel +
-                '.smil/playlist.m3u8?wmsAuthSign=' + authSign + '\n')
+                'q1.stream/playlist.m3u8?wmsAuthSign=' + authSign + '\n')
 
     return m3u8
 # generatePlaylist()
