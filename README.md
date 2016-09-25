@@ -1,8 +1,6 @@
 # SmoothStreamsTV-playlist
 Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.
 
-###### Tested on: Mac OS X 10.11; macOS 10.12; Ubuntu 14.04.5 LTS; Ubuntu 16.04.1 LTS
-
 
 ## Requirements
 
@@ -25,6 +23,15 @@ I've made an effort to use only built-in Python modules, but please let me know 
 
 The m3u8 playlist file will be created in the same directory as the script itself.
 If you wish, you can move the `sstv-playlist.py` file alone to any directory, and the m3u8 playlist file will be created there instead.
+
+
+## Testing
+
+#### Tested on: 
+* Mac OS X 10.11
+* macOS 10.12
+* Ubuntu 14.04.5 LTS
+* Ubuntu 16.04.1 LTS
 
 
 ## Feedback
