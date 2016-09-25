@@ -1,5 +1,5 @@
 # SmoothStreamsTV-playlist
-Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.
+Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) for [SmoothStreamsTV](http://smoothstreams.tv/) from your command line.
 
 
 ## Requirements
