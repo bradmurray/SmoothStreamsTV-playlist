@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 '''generate an m3u8 playlist with your SmoothStreamsTV credentials'''
 
-import time
-from subprocess import call
-from urllib import urlopen
-from json import loads, dumps
 from getpass import getpass
+from json import loads, dumps
+from os import path
+from urllib import urlopen
+import time
 
 __appname__ = 'SSTV-playlist'
 __author__ = 'Stevie Howard (stvhwrd)'
@@ -67,8 +67,8 @@ def main():
     if not server:
         server = getServer(servers)
 
-    colourPrint('green',
-                '\nThank you, generating playlist.\n')
+    colourPrint('yellow',
+                'Please wait, generating playlist.')
 
     playlistText = generatePlaylist(server, authSign)
     playlistFile = buildPlaylistFile(playlistText)
@@ -137,18 +137,17 @@ def buildPlaylistFile(body):
     date = str(time.strftime('%Y-%m-%d'))
     title = 'SmoothStreamsTV_' + date + '.m3u8'
 
-    # create file with subprocess.call (to call shell functions)
-    call(['touch', title])
-
-    # open file or create file if DNE, write <body> to file and save
+    # open file to write, or create file if DNE, write <body> to file and save
     with open(title, 'w+') as f:
         f.write(body)
-        f.flush()
         f.close()
+
     # check for existence/closure of file
     if f.closed:
-        print ("\nPlaylist built successfully, located at: ")
-        call(['pwd'])
+        colourPrint('yellow',
+                    '\nPlaylist built successfully, located at: ')
+        colourPrint('underline',
+                    path.abspath(title))
         exit(0)
     else:
         raise FileNotFoundError
@@ -159,6 +158,7 @@ def buildPlaylistFile(body):
 def generatePlaylist(server, authSign):
     '''build string of channels in m3u8 format based on global channelDictionary'''
     m3u8 = '#EXTM3U\n'
+    # iterate through channels in channel-number order
     for channel in sorted(channelDictionary, key=lambda channel: int(channel)):
         m3u8 += ('#EXTINF:-1, ' + channel + ' ' + channelDictionary[channel] + '\n' +
                 'http://' + server + '.smoothstreams.tv:9100/viewstvn/ch' + channel +
