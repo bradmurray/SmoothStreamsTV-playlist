@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="SmoothStreamsTV playlist : Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.">
+    <meta name="description" content="SmoothStreamsTV playlist : Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) for [SmoothStreamsTV](http://smoothstreams.tv/) from your command line.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/stvhwrd/SmoothStreamsTV-playlist">View on GitHub</a>
 
           <h1 id="project_title">SmoothStreamsTV playlist</h1>
-          <h2 id="project_tagline">Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) from your command line.</h2>
+          <h2 id="project_tagline">Generate a M3U8 playlist (for VLC, MPC, MPlayer, etc.) for [SmoothStreamsTV](http://smoothstreams.tv/) from your command line.</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/stvhwrd/SmoothStreamsTV-playlist/zipball/master">Download this project as a .zip file</a>
@@ -31,9 +31,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>(No affiliation with SmoothStreamsTV or StreamTVNow)</p>
-
-<h2>
+        <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
@@ -58,6 +56,29 @@
 If you wish, you can move the <code>sstv-playlist.py</code> file alone to any directory, and the m3u8 playlist file will be created there instead.</p>
 
 <h2>
+<a id="python-3" class="anchor" href="#python-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python 3</h2>
+
+<p>I will only be maintaining one version of the script, but I will endeavour to keep using a <code>2to3</code> compatible syntax and style.</p>
+
+<p>You can use the <a href="https://docs.python.org/3.0/library/2to3.html">2to3</a> translation utility included with most (if not all) Python installations to automagically convert the script to a Python3 version with the command:</p>
+
+<pre><code>2to3 -w sstv-playlist.py
+</code></pre>
+
+<h4>
+<a id="what-does-this-do" class="anchor" href="#what-does-this-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What does this do?</h4>
+
+<ul>
+<li>backs up the original <code>sstv-playlist.py</code> to <code>sstv-playlist.py.bak</code>
+</li>
+<li>converts <code>sstv-playlist.py</code> from a Python2-compatibile script to a Python3-compatible script.</li>
+</ul>
+
+<p>You can run the resulting script with the command: <code>python3 sstv-playlist.py</code></p>
+
+<p>(Tested with 2to3 from Python 2.7.12 on macOS 10.12)</p>
+
+<h2>
 <a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
 
 <h4>
@@ -68,6 +89,7 @@ If you wish, you can move the <code>sstv-playlist.py</code> file alone to any di
 <li>macOS 10.12</li>
 <li>Ubuntu 14.04.5 LTS</li>
 <li>Ubuntu 16.04.1 LTS</li>
+<li>Windows 7</li>
 <li>Windows 10</li>
 </ul>
 
