@@ -110,9 +110,9 @@ def getCredentials():
     '''prompt user for username and password'''
 
     colourPrint('bold',
-                ('You may wish to store your credentials and server preferences in this file' +
-                 'by opening it in a text editor and filling in the username, password, and' +
-                 'server fields.  If you choose not to do this, you will be prompted for' +
+                ('You may wish to store your credentials and server preferences in this file ' +
+                 'by opening it in a text editor and filling in the username, password, and ' +
+                 'server fields.  If you choose not to do this, you will be prompted for ' +
                  'this information on each run of this script.'))
 
     colourPrint('yellow',
