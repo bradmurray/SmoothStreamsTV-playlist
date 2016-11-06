@@ -17,12 +17,29 @@ I've made an effort to use only built-in Python modules, but please let me know 
 
 3. Open the folder.
 
-4. Run the script with **Python 2**:
+4. Run the script with **Python 2**:  `python ./sstv-playlist.py`
 
-`python ./sstv-playlist.py`
 
-The m3u8 playlist file will be created in the same directory as the script itself.
-If you wish, you can move the `sstv-playlist.py` file alone to any directory, and the m3u8 playlist file will be created there instead.
+## Result
+
+The m3u8 playlist file will be created in the directory that the script is **called from**.
+
+For example, if you are in your home directory,
+```bash
+$ cd ~
+```
+
+and call the script in your `~/Scripts` directory,
+```bash
+$ python ~/Scripts/sstv-playlist.py
+```
+
+the script will be created in your home directory.
+```bash
+$ ls ~
+
+  SmoothStreamsTV.m3u8
+```
 
 
 ## Testing
