@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 '''generate an m3u8 playlist with your SmoothStreamsTV credentials'''
 
 from getpass import getpass
@@ -10,8 +11,13 @@ import time
 
 __appname__ = 'SSTV-playlist'
 __author__ = 'Stevie Howard (stvhwrd)'
-__version__ = '0.1beta'
+__copyright__ = 'Copyright 2016, Stevie Howard'
+__credits__ = ['Stevie Howard']
 __license__ = 'MIT'
+__version__ = '0.1beta'
+__maintainer__ = 'Stevie Howard'
+__email__ = 'stvhwrd@uvic.ca'
+__status__ = 'Beta'
 
 
 greeting = '''
@@ -67,7 +73,6 @@ def main():
 
     playlistText = generatePlaylist(server, authSign)
     playlistFile = buildPlaylistFile(playlistText)
-
 # end main()
 
 
@@ -179,7 +184,6 @@ def buildPlaylistFile(body):
         exit(0)
     else:
         raise FileNotFoundError
-
 # end buildPlaylistFile()
 
 
@@ -196,7 +200,7 @@ def generatePlaylist(server, authSign):
                  'q1.stream/playlist.m3u8?wmsAuthSign=' + authSign + '\n')
 
     return m3u8
-# generatePlaylist()
+# end generatePlaylist()
 
 
 class colour:
